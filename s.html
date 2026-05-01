@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Image Slide Show using jQuery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="responsiveslides.css">
+<link rel="stylesheet" href="s.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="responsiveslides.min.js"></script>
+
+<script>
+$(function () {
+  $("#slider").responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 300,
+    namespace: "slider-callback",
+    maxwidth: "550px"
+  });
+});
+</script>
+
+</head>
+
+<body>
+<h1><big>🔥SPIRIT🔥</big></h1>
+<div id="wrapper">
+  <div class="responsive-slider">
+    <ul class="rslides" id="slider">
+
+      <li>
+        <img src="Spirit-1.jpg" alt="">
+        <p class="caption">A POWERFUL ACTION STORY BEGINS🦖 </p>
+      </li>
+
+      <li>
+        <img src="siprit.jpg" alt="">
+        <p class="caption">#ONEBAD HABIT🔥</p>
+      </li>
+
+      <li>
+        <img src="s.GIF" alt="">
+        <p class="caption">INDIAN'S BIGGEST SUPERSTAR IS HERE🦖 </p>
+      </li>
+
+      <li>
+        <img src="spiritd.jpg" alt="">
+        <p class="caption">EXPERIENCE THIS MOVIE ON  5<SUP>th</SUP> MARCH 2027</p>
+      </li>
+
+      <li>
+        <img src="Spirit-2.jpeg" alt="">
+        <p class="caption">#VIVEK OBEROI🔥</p>
+      </li>
+
+    </ul>
+  </div>
+</div>
+</body>
+</html>
